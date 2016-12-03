@@ -12,11 +12,13 @@ compileJava.options.encoding = 'UTF-8'
 repositories {
    mavenCentral()
 
-   maven { url 'https://jitpack.io' }
+   maven { url 'https://hub.spigotmc.org/nexus/content/groups/public' }
+   maven { url 'http://nexus.hc.to/content/repositories/pub_releases' }
 }
 
 dependencies {
-   compile 'com.github.Bukkit:Bukkit:1.7.9-R0.2'
+   compile 'org.bukkit:bukkit:1.9-R0.1-SNAPSHOT'
+   compile 'net.milkbowl.vault:VaultAPI:1.6'
 }
 
 processResources {
