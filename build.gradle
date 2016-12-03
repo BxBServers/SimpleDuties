@@ -1,0 +1,24 @@
+plugins {
+   id 'java'
+
+   id 'idea'
+   id 'eclipse'
+}
+
+version = '1.0.0'
+
+compileJava.options.encoding = 'UTF-8'
+
+repositories {
+   mavenCentral()
+
+   maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+   compile 'com.github.Bukkit:Bukkit:1.7.9-R0.2'
+}
+
+processResources {
+   expand( version: project.version )
+}

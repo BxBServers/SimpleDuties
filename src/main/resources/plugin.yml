@@ -1,0 +1,20 @@
+# http://wiki.bukkit.org/Plugin.yml
+name: SimpleDuties
+version: ${version}
+author: Gary_
+depend: [Vault]
+
+# description:
+website: http://bxbservers.com/
+
+main: com.bxbservers.bukkit.simpleduties.Main
+
+commands:
+  onduty:
+    description: Toggle staff duty status.
+    usage: /<command>
+
+
+permissions:
+  simpleduties.toggle:
+    default: true
